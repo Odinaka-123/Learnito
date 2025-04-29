@@ -1,0 +1,80 @@
+/* responsive.css */
+.container {
+  max-width: 1200px; /* adjust the maximum width */
+  margin: 0 auto; /* center horizontally */
+  padding: 20px; /* add some padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center vertically */
+}
+
+/* Make the header and footer full-width */
+header, footer {
+  width: 100%;
+}
+
+/* Make the main content area flexible */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Adjust font sizes and spacing for smaller screens */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .mainhero {
+    margin: 24px;
+  }
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 480px) {
+  .sidebar {
+    display: block;
+  }
+  .main {
+    margin-left: 0;
+  }
+  .mainhero {
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 1230px){
+        nav input, nav #searchicon{
+            display: none;
+        }
+        footer{
+            align-items: center;
+        }
+        #mainhero{
+            text-align: center;
+        }
+}
+@media screen and (max-width: 895px){
+    nav ul li{
+        display: none;
+    }
+    #bars{
+      visibility: visible;
+    }
+    #bars:hover ~ #sidebar {
+      visibility: visible;
+      display: block;
+    }
+    /* #sidebar{
+      visibility: visible;
+      display: block;
+    } */
+    }
+  
+
